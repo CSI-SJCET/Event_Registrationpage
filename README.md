@@ -1,2 +1,2 @@
-# Registrationpage_backend
+# Registrationpage
 Event Registration page
