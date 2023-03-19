@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <title>Form</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      {{!-- <link rel="stylesheet" href="/stylesheets/style.css"> --}}
+      <link rel="shortcut icon" href="./src/images/logo.jpeg" type="image/x-icon">
+      <link rel="stylesheet" href="/views/style.css">
+</head>
+
+<body>
+      
+      <section class="nav-bk-blue">
+            <div class="container">
+                  <nav class="navbar navbar-dark navbar-expand-lg pb-4">
+                        <img src="./src/images/logo.jpeg" class="nav-logo">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                              aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="#about">ABOUT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="#services">TEAM</a>
+                                    </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="#team">EVENTS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="#blogs">BLOGS</a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </nav>
+            </div>
+      </section>
+
+      <main>
+            <div class="container mt-5">
+                  <form  action="/home" method="post" name="form">
+                  {{#if msg}}
+                  <div>{{msg}}</div>
+                  {{/if}}
+
+                  {{#if msg2}}
+                  <div>{{msg2}}</div>
+                  {{/if}}
+                        <div class="form-group">
+                              <label for="name">Name</label>
+                              <div class="input-group">
+                                    <div class="input-group-prepend">
+                                          <div class="input-group-text">
+                                                <i class="fa fa-address-card"></i>
+                                          </div>
+                                    </div>
+                                    <input id="name" name="name" type="text" required="required" class="form-control">
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="form-group col">
+                                    <label for="email">Email</label>
+                                    <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                      <i class="fa fa-envelope"></i>
+                                                </div>
+                                          </div>
+                                          <input id="email" name="email" type="text" required="required"
+                                                class="form-control">
+                                    </div>
+                              </div>
+                              <div class="form-group col">
+                                    <label for="phone">Phone (Whatsapp prefered)</label>
+                                    <div class="input-group">
+                                          <div class="input-group-prepend">
+                                                <div class="input-group-text">
+                                                      <i class="fa fa-phone"></i>
+                                                </div>
+                                          </div>
+                                          <input id="phone" name="phone" type="text" required="required"
+                                                class="form-control">
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                              <div class="form-group col">
+                                    <label for="year">Year</label>
+                                    <div>
+                                          <select id="year" name="year" required="required" class="custom-select">
+
+                                                <option>Please Select</option>
+                                                <option value="First">First</option>
+                                                <option value="Second">Second</option>
+                                                <option value="Third">Third</option>
+                                                <option value="Fourth">Fourth</option>
+                                          </select>
+                                    </div>
+                              </div>
+                              <div class="form-group col">
+                                    <label for="branch">Branch</label>
+                                    <div>
+                                          <select id="branch" name="branch" required="required" class="custom-select">
+                                                <option>Please Select</option>
+                                                <option value="CSE">CSE</option>
+                                                <option value="ECE">ECE</option>
+                                                <option value="ECS">ECS</option>
+                                                <option value="EEE">EEE</option>
+                                                <option value="EI">EI</option>
+                                                <option value="ME">ME</option>
+                                                <option value="CE">CE</option>
+                                                <option value="CY">CY</option>
+                                          </select>
+                                    </div>
+                              </div>
+                              <div class="form-group col">
+                                    <label>College</label>
+                                    <div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="college" id="college_0" type="radio" required="required"
+                                                      class="custom-control-input" value="SJCET">
+                                                <label for="college_0" class="custom-control-label">SJCET Palai</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="college" id="college_1" type="radio" required="required"
+                                                      class="custom-control-input" value="other">
+                                                <label for="college_1" class="custom-control-label">Other</label>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="row">
+                              <div class="form-group col">
+                                    <label>How well you know Programming?</label>
+                                    <div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="programming_knowledge" id="programming_knowledge_0"
+                                                      type="radio" class="custom-control-input" value="1"
+                                                      required="required">
+                                                <label for="programming_knowledge_0"
+                                                      class="custom-control-label">1</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="programming_knowledge" id="programming_knowledge_1"
+                                                      type="radio" class="custom-control-input" value="2"
+                                                      required="required">
+                                                <label for="programming_knowledge_1"
+                                                      class="custom-control-label">2</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="programming_knowledge" id="programming_knowledge_2"
+                                                      type="radio" class="custom-control-input" value="3"
+                                                      required="required">
+                                                <label for="programming_knowledge_2"
+                                                      class="custom-control-label">3</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="programming_knowledge" id="programming_knowledge_3"
+                                                      type="radio" required="required" class="custom-control-input"
+                                                      value="4">
+                                                <label for="programming_knowledge_3"
+                                                      class="custom-control-label">4</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="programming_knowledge" id="programming_knowledge_4"
+                                                      type="radio" required="required" class="custom-control-input"
+                                                      value="5">
+                                                <label for="programming_knowledge_4"
+                                                      class="custom-control-label">5</label>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="form-group col">
+                                    <label>How well you know HTML,CSS,JS ?</label>
+                                    <div>
+
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="web_knowledge" id="web_knowledge_0" type="radio"
+                                                      class="custom-control-input" value="1" required="required">
+                                                <label for="web_knowledge_0" class="custom-control-label">1</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="web_knowledge" id="web_knowledge_1" type="radio"
+                                                      class="custom-control-input" value="2" required="required">
+                                                <label for="web_knowledge_1" class="custom-control-label">2</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="web_knowledge" id="web_knowledge_2" type="radio"
+                                                      class="custom-control-input" value="3" required="required">
+                                                <label for="web_knowledge_2" class="custom-control-label">3</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="web_knowledge" id="web_knowledge_3" type="radio"
+                                                      required="required" class="custom-control-input" value="4">
+                                                <label for="web_knowledge_3" class="custom-control-label">4</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input name="web_knowledge" id="web_knowledge_4" type="radio"
+                                                      required="required" class="custom-control-input" value="5">
+                                                <label for="web_knowledge_4" class="custom-control-label">5</label>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="form-group">
+                              <label for="Reach">From Where did you hear about this</label>
+                              <div>
+                                    <select id="Reach" name="Reach" class="custom-select" required="required">
+
+                                          <option>Please Select</option>
+                                          <option value="WhatsAPP">WhatsAPP</option>
+                                          <option value="Instagram">Instagram</option>
+                                          <option value="Linkedin">Linkedin</option>
+                                          <option value="Friend">Friend</option>
+                                          <option value="Other">Other</option>
+                                    </select>
+                              </div>
+                        </div>
+                        <div class="form-group">
+                              <label for="questions">Do you have any queries</label>
+                              <textarea id="questions" name="questions" cols="40" rows="5"
+                                    class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                              <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                  </form>
+
+      </main>
+      
+</body>
+
+</html>
