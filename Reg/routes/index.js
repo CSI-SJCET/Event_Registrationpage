@@ -59,7 +59,7 @@ router.post('/home',(req,res,next)=>{
         }else{
      // console.log(result[0])
        console.log('inserted')
-       var msg3='Registerd';
+       var msg3='successfully registered';
        res.render('index',{msg3})
       
 
