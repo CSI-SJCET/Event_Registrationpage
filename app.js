@@ -6,7 +6,7 @@ var logger = require('morgan');
 const db=require('./connection/db')
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+/**var usersRouter = require('./routes/users');**/
 
 var app = express();
 app.use(express.static(__dirname + '/Public'));
