@@ -125,14 +125,14 @@
                                           <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
                                                 <div data-wrapper-react="true"><span class="form-sub-label-container"
                                                             style="vertical-align:top" data-input-type="last"><input
-                                                                  type="text" id="last_3" name="q3_fullName3[last]"
+                                                                  type="text" id="name" name="name"
                                                                   class="form-textbox validate[required]"
                                                                   data-defaultvalue=""
                                                                   autoComplete="section-input_3 family-name" size="15"
                                                                   value="" data-component="last"
                                                                   aria-labelledby="label_3 sublabel_3_last"
-                                                                  required="" /><label class="form-sub-label"
-                                                                  for="last_3" id="sublabel_3_last"
+                                                                  required="required" /><label class="form-sub-label"
+                                                                  for="name" id="sublabel_3_last"
                                                                   style="min-height:13px"
                                                                   aria-hidden="false">Name</label></span></div>
                                           </div>
@@ -140,32 +140,32 @@
                                     <li class="form-line form-line-column form-col-1 jf-required"
                                           data-type="control_phone" id="id_5"><label
                                                 class="form-label form-label-top form-label-auto" id="label_5"
-                                                for="input_5_full"> Phone<span class="form-required">*</span> </label>
+                                                for="phone"> Phone<span class="form-required">*</span> </label>
                                           <div id="cid_5" class="form-input-wide jf-required" data-layout="half"> <span
                                                       class="form-sub-label-container" style="vertical-align:top"><input
-                                                            type="tel" id="input_5_full" name="q5_phone[full]"
+                                                            type="tel" id="phone" name="phone"
                                                             data-type="mask-number"
                                                             class="mask-phone-number form-textbox validate[required, Fill Mask]"
                                                             data-defaultvalue=""
                                                             autoComplete="section-input_5 tel-national"
                                                             style="width:310px" data-masked="true" value=""
                                                             placeholder="+910000000000" data-component="phone"
-                                                            aria-labelledby="label_5" required="" /><label
-                                                            class="form-sub-label is-empty" for="input_5_full"
+                                                            aria-labelledby="label_5" required="required" /><label
+                                                            class="form-sub-label is-empty" for="phone"
                                                             id="sublabel_5_masked" style="min-height:13px"
                                                             aria-hidden="false"></label></span> </div>
                                     </li>
                                     <li class="form-line form-line-column form-col-2" data-type="control_email"
                                           id="id_6"><label class="form-label form-label-top form-label-auto"
-                                                id="label_6" for="input_6"> E-mail </label>
+                                                id="label_6" for="email"> E-mail </label>
                                           <div id="cid_6" class="form-input-wide" data-layout="half"> <span
                                                       class="form-sub-label-container" style="vertical-align:top"><input
-                                                            type="email" id="input_6" name="q6_email6"
+                                                            type="email" id="email" name="email"
                                                             class="form-textbox validate[Email]" data-defaultvalue=""
                                                             style="width:310px" size="310" value=""
                                                             placeholder="ex: email@yahoo.com" data-component="email"
-                                                            aria-labelledby="label_6 sublabel_input_6" /><label
-                                                            class="form-sub-label" for="input_6" id="sublabel_input_6"
+                                                            aria-labelledby="label_6 sublabel_email" /><label
+                                                            class="form-sub-label" for="email" id="sublabel_email"
                                                             style="min-height:13px"
                                                             aria-hidden="false">example@example.com</label></span>
                                           </div>
@@ -179,12 +179,12 @@
                                     </li>
                                     <li class="form-line form-line-column form-col-1 jf-required"
                                           data-type="control_dropdown" id="id_19"><label
-                                                class="form-label form-label-top" id="label_19" for="input_19">
+                                                class="form-label form-label-top" id="label_19" for="year">
                                                 Year<span class="form-required">*</span> </label>
                                           <div id="cid_19" class="form-input-wide jf-required" data-layout="half">
-                                                <select class="form-dropdown validate[required]" id="input_19"
-                                                      name="q19_year" style="width:310px" data-component="dropdown"
-                                                      required="" aria-label="Year">
+                                                <select class="form-dropdown validate[required]" id="year"
+                                                      name="year" style="width:310px" data-component="dropdown"
+                                                      required="required" aria-label="Year">
                                                       <option value="">Please Select</option>
                                                       <option value="First">First</option>
                                                       <option value="Second">Second</option>
@@ -194,22 +194,22 @@
                                     </li>
                                     <li class="form-line form-line-column form-col-2 jf-required"
                                           data-type="control_dropdown" id="id_20"><label
-                                                class="form-label form-label-top" id="label_20" for="input_20">
+                                                class="form-label form-label-top" id="label_20" for="branch">
                                                 Branch<span class="form-required">*</span> </label>
                                           <div id="cid_20" class="form-input-wide jf-required" data-layout="half">
-                                                <select class="form-dropdown validate[required]" id="input_20"
-                                                      name="q20_branch" style="width:310px" data-component="dropdown"
-                                                      required="" aria-label="Branch">
+                                                <select class="form-dropdown validate[required]" id="branch"
+                                                      name="branch" style="width:310px" data-component="dropdown"
+                                                      required="required" aria-label="Branch">
                                                       <option value="">Please Select</option>
                                                       <option value="CSE">CSE</option>
-                                                      <option value="ECE">ECE</option>
+                                                      {{!-- <option value="ECE">ECE</option>
                                                       <option value="EEE">EEE</option>
                                                       <option value="ME">ME</option>
                                                       <option value="CE">CE</option>
                                                       <option value="AD">AD</option>
                                                       <option value="ECS">ECS</option>
                                                       <option value="CY">CY</option>
-                                                      <option value="EI">EI</option>
+                                                      <option value="EI">EI</option> --}}
                                                 </select> </div>
                                     </li>
                                     <li class="form-line jf-required" data-type="control_radio" id="id_25"><label
@@ -220,24 +220,24 @@
                                                       data-component="radio"><span class="form-radio-item"
                                                             style="clear:left"><span class="dragger-item"></span><input
                                                                   type="radio" aria-describedby="label_25"
-                                                                  class="form-radio validate[required]" id="input_25_0"
-                                                                  name="q25_typeA" value="SJCET PALAI"
-                                                                  required="" /><label id="label_input_25_0"
-                                                                  for="input_25_0">SJCET PALAI</label></span><span
+                                                                  class="form-radio validate[required]" id="college_0"
+                                                                  name="college" value="SJCET PALAI"
+                                                                  required="required" /><label id="label_college_0"
+                                                                  for="college_0">SJCET PALAI</label></span><span
                                                             class="form-radio-item formRadioOther"
                                                             style="clear:left"><input type="radio"
                                                                   class="form-radio-other form-radio validate[required]"
-                                                                  name="q25_typeA" id="other_25" value="other"
+                                                                  name="college" id="college_1" value="other"
                                                                   tabindex="0" aria-label="Other" /><label
-                                                                  id="label_other_25" style="text-indent:0"
-                                                                  for="other_25">Other</label><span id="other_25_input"
+                                                                  id="label_college_1" style="text-indent:0"
+                                                                  for="college_1">Other</label><span id="college_1_input"
                                                                   class="other-input-container"
-                                                                  style="display:none"><input type="text"
+                                                                  {{!-- style="display:none"><input type="text"
                                                                         class="form-radio-other-input form-textbox"
-                                                                        name="q25_typeA[other]" data-otherhint="Other"
+                                                                        name="college[other]" data-otherhint="Other"
                                                                         size="15" id="input_25"
                                                                         data-placeholder="Please type another option here"
-                                                                        placeholder="Please type another option here" /></span></span>
+                                                                        placeholder="Please type another option here" /></span></span> --}}
                                                 </div>
                                           </div>
                                     </li>
@@ -250,11 +250,11 @@
                                     </li>
                                     <li class="form-line form-line-column form-col-1 jf-required"
                                           data-type="control_rating" id="id_26"><label class="form-label form-label-top"
-                                                id="label_26" for="input_26"> How well you know programming<span
+                                                id="label_26" for="programming_knowledge"> How well you know programming<span
                                                       class="form-required">*</span> </label>
                                           <div id="cid_26" class="form-input-wide jf-required" data-layout="full">
-                                                <div id="input_26" name="q26_howWell" data-component="rating"
-                                                      data-version="v2"><select name="q26_howWell">
+                                                <div id="programmingknowledge" name="programming_knowledge" data-component="rating"
+                                                      data-version="v2"><select name="programming_knowledge" id="programming_knowledge">
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
                                                             <option value="3">3</option>
@@ -265,11 +265,11 @@
                                     </li>
                                     <li class="form-line form-line-column form-col-2 jf-required"
                                           data-type="control_rating" id="id_27"><label class="form-label form-label-top"
-                                                id="label_27" for="input_27"> How well you know HTML,CSS,JS<span
+                                                id="label_27" for="web_knowledge"> How well you know HTML,CSS,JS<span
                                                       class="form-required">*</span> </label>
                                           <div id="cid_27" class="form-input-wide jf-required" data-layout="full">
-                                                <div id="input_27" name="q27_howWell27" data-component="rating"
-                                                      data-version="v2"><select name="q27_howWell27">
+                                                <div id="web_knowledge" name="web_knowledge" data-component="rating"
+                                                      data-version="v2"><select name="web_knowledge" id="web_knowledge">
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
                                                             <option value="3">3</option>
@@ -281,12 +281,12 @@
                                     <li class="form-line form-line-column form-col-3 jf-required"
                                           data-type="control_dropdown" id="id_8"><label
                                                 class="form-label form-label-top form-label-auto" id="label_8"
-                                                for="input_8"> How did you hear about us?<span
+                                                for="Reach"> How did you hear about us?<span
                                                       class="form-required">*</span> </label>
                                           <div id="cid_8" class="form-input-wide jf-required" data-layout="half">
-                                                <select class="form-dropdown validate[required]" id="input_8"
-                                                      name="q8_howDid8" style="width:310px" data-component="dropdown"
-                                                      required="" aria-label="How did you hear about us?">
+                                                <select class="form-dropdown validate[required]" id="Reach"
+                                                      name="Reach" style="width:310px" data-component="dropdown"
+                                                      required="required" aria-label="How did you hear about us?">
                                                       <option value="">Please Select</option>
                                                       <option value="WhatsAPP">WhatsAPP</option>
                                                       <option value="Instagram">Instagram</option>
@@ -305,13 +305,13 @@
                                                       data-type="input-textbox" class="form-textbox validate[required]"
                                                       data-defaultvalue="" style="width:310px" size="310" value=""
                                                       placeholder=" " data-component="textbox" aria-labelledby="label_9"
-                                                      required="" /> </div>
+                                                      required="required" /> </div>
                                     </li>
                                     <li class="form-line" data-type="control_textarea" id="id_11"><label
-                                                class="form-label form-label-top" id="label_11" for="input_11"> Any
+                                                class="form-label form-label-top" id="label_11" for="questions"> Any
                                                 Queries or suggestion: </label>
                                           <div id="cid_11" class="form-input-wide" data-layout="full"> <textarea
-                                                      id="input_11" class="form-textarea" name="q11_feedbackAbout11"
+                                                      id="questions" class="form-textarea" name="questions"
                                                       style="width:648px;height:163px" data-component="textarea"
                                                       aria-labelledby="label_11"></textarea> </div>
                                     </li>
