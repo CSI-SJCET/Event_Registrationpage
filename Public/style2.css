@@ -14,7 +14,17 @@ h2,
 label {
     color: rgb(75, 75, 75);
 }
+img{
+    height: 40px;
 
+}
+h4{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
 ::-moz-selection {
     background-color: rgb(61, 138, 210);
 }
