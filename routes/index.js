@@ -4,7 +4,7 @@ const db=require('../connection/db')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'CSI' });
+  res.render('closed', { title: 'CSI' });
   console.log(next);
 });
 router.post('/home',(req,res,next)=>{
