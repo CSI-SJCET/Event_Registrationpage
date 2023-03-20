@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
   console.log(next);
 });
 router.post('/home',(req,res,next)=>{
+  console.log(req.body)
   form_name=req.body.name;
   form_email=req.body.email;
   form_phone=req.body.phone;
