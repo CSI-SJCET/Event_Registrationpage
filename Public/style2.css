@@ -5,14 +5,14 @@
 }
 
 body {
-    background-color: rgb(221, 221, 249);
+    background-color: #659cdb;
     overflow-x: hidden;
 }
 
 h1,
 h2,
 label {
-    color: white;
+    color: rgb(75, 75, 75);
 }
 
 ::-moz-selection {
@@ -32,7 +32,9 @@ label {
 }
 
 form, .main-box {
-    background-color: rgb(146, 146, 253);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 15px 10px ;
+    
 }
 
 .btn-send {
