@@ -60,7 +60,7 @@ router.post('/home',(req,res,next)=>{
      // console.log(result[0])
        console.log('inserted')
        var msg3='successfully registered';
-       res.render('index',{msg3})
+       res.render('success',{msg3})
       
 
         }
