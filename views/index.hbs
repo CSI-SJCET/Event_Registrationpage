@@ -109,7 +109,7 @@
                 </div>
               </div>
             </li>
-            <li class="form-line jf-required" data-type="control_fullname" id="id_3"><label
+            <li class="form-line form-line-column form-col-2" data-type="control_fullname" id="id_3"><label
                 class="form-label form-label-top" id="label_3" for="first_3"> Full
                 Name<span class="form-required">*</span> </label>
               <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
@@ -122,26 +122,11 @@
                 </div>
               </div>
             </li>
-            <li class="form-line form-line-column form-col-1 jf-required" data-type="control_phone" id="id_5"><label
-                class="form-label form-label-top form-label-auto" id="label_5" for="phone"> Phone<span
-                  class="form-required">*</span> </label>
-              <div id="cid_5" class="form-input-wide jf-required" data-layout="half"> <span
-                  class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="phone" name="phone"
-                    data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]"
-                    data-defaultvalue="" autoComplete="section-input_5 tel-national" style="width:310px"
-                    data-masked="true" value="" placeholder="+910000000000" data-component="phone"
-                    aria-labelledby="label_5" required="required" />
-                  {{#if msg2}}
-                  <label class="form-sub-label" for="phone" id="sublabel_5_masked" style="min-height:13px;color:red   "
-                    aria-hidden="false">{{msg2}}</label>
-
-                  {{/if}}
-                </span> </div>
-            </li>
+            
             <li class="form-line form-line-column form-col-2" data-type="control_email" id="id_6"><label
                 class="form-label form-label-top form-label-auto" id="label_6" for="email"> E-mail<span
                   class="form-required">*</span></label>
-              <div id="cid_6" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container"
+              <div id="cid_6" class="form-input-wide" data-layout="full"> <span class="form-sub-label-container"
                   style="vertical-align:top"><input type="email" id="email" name="email"
                     class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value=""
                     placeholder="ex: email@yahoo.com" data-component="email" aria-labelledby="label_6 sublabel_email" />
@@ -169,19 +154,19 @@
                   <option value="">Please Select</option>
                   {{!-- <option value="First">First</option> --}}
                   <option value="Second">Second</option>
-                  <option value="Third">Third</option>
                   {{!-- <option value="Fourth">Fourth</option> --}}
                 </select>
               </div>
             </li>
             <li class="form-line form-line-column form-col-2 jf-required" data-type="control_dropdown" id="id_20"><label
                 class="form-label form-label-top" id="label_20" for="branch">
-                Branch<span class="form-required">*</span> </label>
+                Batch<span class="form-required">*</span> </label>
               <div id="cid_20" class="form-input-wide jf-required" data-layout="half">
-                <select class="form-dropdown validate[required]" id="branch" name="branch" style="width:310px"
-                  data-component="dropdown" required="required" aria-label="Branch">
+                <select class="form-dropdown validate[required]" id="batch" name="branch" style="width:310px"
+                  data-component="dropdown" required="required" aria-label="Batch">
                   <option value="">Please Select</option>
-                  <option value="CSE">CSE</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
                   {{!-- <option value="ECE">ECE</option>
                   <option value="EEE">EEE</option>
                   <option value="ME">ME</option>
@@ -193,25 +178,7 @@
                 </select>
               </div>
             </li>
-            <li class="form-line jf-required" data-type="control_radio" id="id_25"><label
-                class="form-label form-label-left" id="label_25" for="input_25">
-                College<span class="form-required">*</span> </label>
-              <div id="cid_25" class="form-input jf-required" data-layout="full">
-                <div class="form-single-column" role="group" aria-labelledby="label_25" data-component="radio"><span
-                    class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio"
-                      aria-describedby="label_25" class="form-radio validate[required]" id="college_0" name="college"
-                      value="SJCET PALAI" required="required" /><label id="label_college_0" for="college_0">SJCET
-                      PALAI</label></span><span class="form-radio-item formRadioOther" style="clear:left"><input
-                      type="radio" class="form-radio-other form-radio validate[required]" name="college" id="college_1"
-                      value="other" tabindex="0" aria-label="Other" /><label id="label_college_1" style="text-indent:0"
-                      for="college_1">Other</label><span id="college_1_input" class="other-input-container" {{!--
-                      style="display:none"><input type="text" class="form-radio-other-input form-textbox"
-                        name="college[other]" data-otherhint="Other" size="15" id="input_25"
-                        data-placeholder="Please type another option here"
-                        placeholder="Please type another option here" /></span></span> --}}
-                </div>
-              </div>
-            </li>
+            
             <li class="form-line" data-type="control_divider" id="id_22">
               <div id="cid_22" class="form-input-wide" data-layout="full">
                 <div class="divider" data-component="divider"
@@ -219,39 +186,13 @@
                 </div>
               </div>
             </li>
-            <li class="form-line form-line-column form-col-1 jf-required" data-type="control_rating" id="id_26"><label
-                class="form-label form-label-top" id="label_26" for="input_26"> How well you know programming<span
-                  class="form-required">*</span> </label>
-              <div id="cid_26" class="form-input-wide jf-required" data-layout="full">
-                <div id="input_26" name="programming_knowledge" data-component="rating" data-version="v2"><select
-                    name="programming_knowledge">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select></div>
-              </div>
-            </li>
-            <li class="form-line form-line-column form-col-2 jf-required" data-type="control_rating" id="id_27"><label
-                class="form-label form-label-top" id="label_27" for="input_27"> How well you know HTML,CSS,JS<span
-                  class="form-required">*</span> </label>
-              <div id="cid_27" class="form-input-wide jf-required" data-layout="full">
-                <div id="input_27" name="web_knowledge" data-component="rating" data-version="v2"><select
-                    name="web_knowledge">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </select></div>
-              </div>
-            </li>
+            
+            
             <li class="form-line form-line-column form-col-3 jf-required" data-type="control_dropdown" id="id_8"><label
                 class="form-label form-label-top form-label-auto" id="label_8" for="Reach"> How did you hear about
                 us?<span class="form-required">*</span> </label>
               <div id="cid_8" class="form-input-wide jf-required" data-layout="half">
-                <select class="form-dropdown validate[required]" id="Reach" name="Reach" style="width:310px"
+                {{!-- <select class="form-dropdown validate[required]" id="Reach" name="Reach" style="width:310px"
                   data-component="dropdown" required="required" aria-label="How did you hear about us?">
                   <option value="">Please Select</option>
                   <option value="WhatsAPP">WhatsAPP</option>
@@ -259,7 +200,8 @@
                   <option value="LInkedin">LInkedin</option>
                   <option value="Friend">Friend</option>
                   <option value="Other">Other</option>
-                </select>
+                </select> --}}
+                <input id="file" name="file" type="file" class="form-line">
               </div>
             </li>
             {{!-- <li class="form-line form-line-column form-col-4 jf-required form-field-hidden" style="display:none;"
