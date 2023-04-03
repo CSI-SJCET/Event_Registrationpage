@@ -9,8 +9,9 @@
   <link rel="alternate" type="text/xml+oembed"
     href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F230702862347455"
     title="oEmbed Form">
-  <meta property="og:title" content="csi Registration">
+  <meta property="og:title" content="csi challenge">
   <meta property="og:url" content="">
+  <meta name="author" content="Tomin Joy">
   <meta property="og:description" content="Please click the link to complete this form.">
   <meta name="slack-app-id" content="AHNMASS8M">
   <meta property="og:image" content="/images/logo.png" />
@@ -24,7 +25,7 @@
       </script><link rel="canonical" href="https://form.jotform.com/230702862347455" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
   <meta name="HandheldFriendly" content="true" />
-  <title>CSI Registration</title>
+  <title>CSI Challenge</title>
   <style type="text/css">
     @media print {
       .form-section {
@@ -109,7 +110,7 @@
                 </div>
               </div>
             </li>
-            <li class="form-line form-line-column form-col-2" data-type="control_fullname" id="id_3"><label
+            <li class="form-line jf-required" data-type="control_fullname" id="id_3"><label
                 class="form-label form-label-top" id="label_3" for="first_3"> Full
                 Name<span class="form-required">*</span> </label>
               <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
@@ -122,7 +123,22 @@
                 </div>
               </div>
             </li>
-            
+            <li class="form-line form-line-column form-col-1 jf-required" data-type="control_phone" id="id_5"><label
+                class="form-label form-label-top form-label-auto" id="label_5" for="phone"> Phone<span
+                  class="form-required">*</span> </label>
+              <div id="cid_5" class="form-input-wide jf-required" data-layout="half"> <span
+                  class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="phone" name="phone"
+                    data-type="mask-number" class="mask-phone-number form-textbox validate[required, Fill Mask]"
+                    data-defaultvalue="" autoComplete="section-input_5 tel-national" style="width:310px"
+                    data-masked="true" value="" placeholder="+910000000000" data-component="phone"
+                    aria-labelledby="label_5" required="required" />
+                  {{#if msg2}}
+                  <label class="form-sub-label" for="phone" id="sublabel_5_masked" style="min-height:13px;color:red   "
+                    aria-hidden="false">{{msg2}}</label>
+
+                  {{/if}}
+                </span> </div>
+            </li>
             <li class="form-line form-line-column form-col-2" data-type="control_email" id="id_6"><label
                 class="form-label form-label-top form-label-auto" id="label_6" for="email"> E-mail<span
                   class="form-required">*</span></label>
@@ -188,9 +204,8 @@
             </li>
             
             
-            <li class="form-line form-line-column form-col-3 jf-required" data-type="control_dropdown" id="id_8"><label
-                class="form-label form-label-top form-label-auto" id="label_8" for="Reach"> How did you hear about
-                us?<span class="form-required">*</span> </label>
+            <li class="form-line  jf-required" data-type="control_dropdown" id="id_8"><label
+                class="form-label form-label-top form-label-auto" id="label_8" for="Reach">Upload the file or paste the link<span class="form-required">*</span> </label>
               <div id="cid_8" class="form-input-wide jf-required" data-layout="half">
                 {{!-- <select class="form-dropdown validate[required]" id="Reach" name="Reach" style="width:310px"
                   data-component="dropdown" required="required" aria-label="How did you hear about us?">
@@ -202,6 +217,14 @@
                   <option value="Other">Other</option>
                 </select> --}}
                 <input id="file" name="file" type="file" class="form-line">
+                <div data-wrapper-react="true"><span class="form-sub-label-container" style="vertical-align:top"
+                    data-input-type="last"><input type="url" id="file_url" name="file_url"
+                      class="form-textbox validate[required]" data-defaultvalue=""
+                      autoComplete="section-input_4 family-name" size="15" value="" data-component="last"
+                      aria-labelledby="label_3 sublabel_3_last" required="required" /><label class="form-sub-label"
+                      for="name" id="sublabel_3_last" style="min-height:13px" aria-hidden="false">Paste url here</label></span>
+                </div>
+                
               </div>
             </li>
             {{!-- <li class="form-line form-line-column form-col-4 jf-required form-field-hidden" style="display:none;"
