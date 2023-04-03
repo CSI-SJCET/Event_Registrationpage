@@ -16,8 +16,7 @@ router.post('/home',(req,res,next)=>{
   form_email=req.body.email;
   form_phone=req.body.phone;
   form_year=req.body.year;
-  form_brach=req.body.branch;
-  form_college=req.body.batch;
+  form_brach=req.body.batch;
   form_file=req.file.path;
   
    const date=new Date()
