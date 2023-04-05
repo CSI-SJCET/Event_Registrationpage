@@ -43,6 +43,8 @@ router.post('/home',(req,res,next)=>{
           }
           else{
 
+                  module.exports={form_email,form_phone}
+
           }
             
           
