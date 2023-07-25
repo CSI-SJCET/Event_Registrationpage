@@ -1,2 +1,0 @@
-# Registrationpage
-Event Registration page
