@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const mailer=require('../node-mailer/confirmation')
 let api = express.Router();
 const registration = require("../helper/registration-helper");
 
@@ -18,11 +19,13 @@ api.post("/", async (req, res) => {
       queriesorSuggestion: req.body.qt,
     },
   ];
-
+console.log(data);
   registration
     .insert_std(data)
     .then((result) => {
       console.log(result.data);
+      mailer.sendEmail(req.body.name,req.body.email);
+
       res.status(201).json({ message:result.Status, data: result.data });
     })
     .catch((err) => {
